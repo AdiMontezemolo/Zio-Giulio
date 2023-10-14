@@ -1,0 +1,28 @@
+#main_header img {                                            /* selecciona todos los img que esten dentro de main_header*/
+    width: 222px;                                            /*esto es para elegir el tamaño de aquello que seleccione arriba*/
+}
+
+#main_header {                                                           /*selecciona a main_header*/ 
+    display: flex;                               /*hace q el container o sea main_header en este caso sa una caja para cajitas pa elegir como se ordenan adentro las cajitas*/
+    flex-direction: row;                      /*puede ser row o column que es cómo se ordenan dichas cajitas. Flex es responsive*/
+}                                          /*Pero la linea era solo para q la gran caja main_header sea flex. Queremos q quien conitene a los botones tambien sea flex o sea q nav sea flex*/
+
+#main_header nav {                          /*No ponmos el #porq #es solo cuando tiene un id. Pero aca si lo ponemos porq agarramos todos los nav adentro deel main_header*/
+    display: flex;
+    flex-direction: row;                      /*row es fila*/
+    flex-flow: center;
+    gap: 22px;                                /*gap es para separar los elementos en este caso los botones del menu*/
+    flex-wrap: wrap;  /*esto es de la pagina de los cubos naranjas y violetas y es para hacer q los botones sean responsive, o sea q cuando modifico el tamaño del monitor se pasen para abajo */ 
+}
+
+#main_header a {           /*todos los a que esten adentro de main_header los va a atrapar. Los a son los botones ("a" es un tag botones)*/
+    color: inherit;        /*no le dijimos q sea blanco sino q lo herede de su padre q es el nav, q no lo tiene especificado entonces lo hereda de su padre q es main_header q no lo tiene especificado y entonces lo hereda de su padre que es el body q sí lo tiene especificado abajo*/
+    text-decoration: inherit;
+    font-size: 150%;           /*no lo ponemos en px pa q sea responsive. le ponemos % q lo hereda del padre*/
+    font-family: 'Skranji', cursive;       /*No bajo la fuente en mi pc porq queremos un hipervinculo q este disponible en todo el mundo*/
+    transition: 1s;  /*es la velocidad de la animacion que especificamos en linea 26 -en este caso, cuánto tarda en ponerse beige*/
+}
+
+#main_header a:hover {   /*hover significa que "al apoyar el ratón" pasa lo que diga en la línea 27. O sea color beige*/
+    color: burlywood;
+}

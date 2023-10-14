@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zio Giulio Menu</title>
+        <link rel="stylesheet" href="css/header.css">       <!--al header lo llame main_header pa poder seleccionarlo a ese por si dsps agrego otro header-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/productos.css"> <!--acá le estamos diciendo q use el archivo css-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">  <!--es el link de a fuente de google fonts. los 3 renglones-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+        
+
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <header id="main_header"></header>
+
+            <section>
+                <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 70px;"> <!--lo centramos a la imagen. Margin bottom es pa dejar espacio abajo-->
+                    <img src="img/portada.jpg" style="width: 100%; max-width: 1700px;"> <!---acá metimos la imagen el img, luego ajustamos el tamaño con style inline porque solo está acá en prooductos esta foto -no como el header que está en todas-->
+                </div>    <!---tenemos que crear un div porque queremos usar flex y flex son cajitas sí o sí-->
+                            <!--como solo lo hacemos acá, lo hacemos con CSS inline en el div o sea e primer renglon-->
+                
+                <div class="gondola"> <!--no usamos id porq tal vez hayan varias gondolas y no sea UNICO-->
+                    <div class="producto"> <!--De hecho aca ya sabemos que habrá más de 1 producto por eso no usamos id. TODOS LOS PRODUCTOS SE VEN DE X FORMA-->
+                        <img src="img/pizza-margheritta jpg.jpg" alt="pizza-margherita"> <!--acá no lo hacmos css inline porq si bien es solo en esta pag, habrá 100 productos entonces hago un css externo llamado productos.css-->
+                        <div>
+                            <p class="titulo_de_producto">PIZZA MARGHERITA</p> <!---le ponemos una clase para q en CSS todos los titulos de productos tengan el mismo estilo. Ademas SEO lo va a usar-->
+                            <p class="descripcion_de_producto">Deliciosa pizza con una base de masa fina, salsa de tomate, mozzarella fresca y hojas de albahaca, ofreciendo un equilibrio perfecto entre sabores simples y reconfortantes.</p>
+                        </div>
+                    </div>
+
+                    <div class="producto"> <!--De hecho aca ya sabemos que habrá más de 1 producto por eso no usamos id. TODOS LOS PRODUCTOS SE VEN DE X FORMA-->
+                        <img src="img/pizza-mozarella.jpg" alt="Pizza de mozzarella"> <!--acá no lo hacmos css inline porq si bien es solo en esta pag, habrá 100 productos entonces hago un css externo llamado productos.css--->
+                        <div>
+                            <p class="titulo_de_producto">PIZZA DE MOZZARELLA</p> <!---le ponemos una clase para q en CSS todos los titulos de productos tengan el mismo estilo. Ademas SEO lo va a usar-->
+                            <p class="descripcion_de_producto">La pizza de mozzarella es una deliciosa combinación de masa crujiente, salsa de tomate, generosas capas de queso mozzarella derretido y, a menudo, un toque de hierbas y aceite de oliva, ofreciendo un sabor rico y reconfortante.</p>
+                        </div>
+                    </div>
+
+                    <div class="producto"> <!--De hecho aca ya sabemos que habrá más de 1 producto por eso no usamos id. TODOS LOS PRODUCTOS SE VEN DE X FORMA-->
+                        <img src="img/fugazzeta.jpg" alt="fugazzeta"> <!--acá no lo hacmos css inline porq si bien es solo en esta pag, habrá 100 productos entonces hago un css externo llamado productos.css-->
+                        <div>
+                            <p class="titulo_de_producto">FUGAZZETA</p> <!---le ponemos una clase para q en CSS todos los titulos de productos tengan el mismo estilo. Ademas SEO lo va a usar-->
+                            <p class="descripcion_de_producto">Deliciosa pizza a base de masa esponjosa cubierta con una generosa cantidad de cebolla y queso mozzarella, a menudo sazonada con orégano y aceite de oliva, creando una combinación de sabores única y reconfortante.</p>
+                        </div>
+                    </div>
+
+                    <div class="producto"> <!--De hecho aca ya sabemos que habrá más de 1 producto por eso no usamos id. TODOS LOS PRODUCTOS SE VEN DE X FORMA-->
+                        <img src="img/pizza-morron.jpg" alt="pizza con morron"> <!--acá no lo hacmos css inline porq si bien es solo en esta pag, habrá 100 productos entonces hago un css externo llamado productos.css-->
+                        <div>
+                            <p class="titulo_de_producto">PIZZA CON MORRÓN</p> <!---le ponemos una clase para q en CSS todos los titulos de productos tengan el mismo estilo. Ademas SEO lo va a usar-->
+                            <p class="descripcion_de_producto">Pizza con  rodajas de pimiento morrón, que aportan un sabor ligeramente dulce y un toque de color a la combinación de queso, salsa de tomate y masa.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="producto"> <!--De hecho aca ya sabemos que habrá más de 1 producto por eso no usamos id. TODOS LOS PRODUCTOS SE VEN DE X FORMA-->
+                        <img src="img/pizza-calabresa.jpg" alt="gpizza calabresa"> <!--acá no lo hacmos css inline porq si bien es solo en esta pag, habrá 100 productos entonces hago un css externo llamado productos.css-->
+                        <div>
+                            <p class="titulo_de_producto">PIZZA CALABRESA</p> <!---le ponemos una clase para q en CSS todos los titulos de productos tengan el mismo estilo. Ademas SEO lo va a usar-->
+                            <p class="descripcion_de_producto">Pizza cubierta con salsa de tomate, queso mozzarella y rodajas de salchicha picante o pepperoni, creando una experiencia sabrosa y ligeramente picante.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="producto"> <!--De hecho aca ya sabemos que habrá más de 1 producto por eso no usamos id. TODOS LOS PRODUCTOS SE VEN DE X FORMA-->
+                        <img src="img/pizza-veggie.jpg" alt="pizza veganae"> <!--acá no lo hacmos css inline porq si bien es solo en esta pag, habrá 100 productos entonces hago un css externo llamado productos.css-->
+                        <div>
+                            <p class="titulo_de_producto">PIZZA VEGGIE</p> <!---le ponemos una clase para q en CSS todos los titulos de productos tengan el mismo estilo. Ademas SEO lo va a usar-->
+                            <p class="descripcion_de_producto">Pizza que sustituye el queso por una gran variedad de verduras (tomates cherry, cebolla, pimentones, basílico), ofreciendo un sabor y textura satisfactorios</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+
+
+        </div>
+    <script src="js/header.js"></script> <!--acá estamos el script de java script-->
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.gondola {             /*acá no ponemos # porq es para el id , para el class usamos un punto .*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;     /*es para q no queden todos los productos en el mismo renglón*/
+}
+
+.titulo_de_producto {
+    font-family: 'Skranji', cursive;
+    font-size: 150%;
+}
+
+.producto img {   /*cómo hacemos para q las imagenes de los productos se vean REDONDAS.*/
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%; /*a diferencia de los demás eleementos la imagen no viene con 100% por default, entonces le especifico 100% del padre q en este caso el div producto*/
+}
+
+.producto {
+    width: 27%; /*Yo quiero q hayan 3 produucttos por renglon pero hay q considerar el gap, por eso no uso 33%*/
+    max-width: 700px;
+    min-width: 320px;
+}
