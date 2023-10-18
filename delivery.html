@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zio Giulio Delivery</title>
+        <link rel="stylesheet" href="css/header.css">       <!--al header lo llame main_header pa poder seleccionarlo a ese por si dsps agrego otro header-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/productos.css"> <!--acá le estamos diciendo q use el archivo css-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">  <!--es el link de a fuente de google fonts. los 3 renglones-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+        
+
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <header id="main_header"></header>
+
+            <section>
+                    <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 70px;">
+                        <img src="img/vespaantica.jpg" style="width: 100%; max-width: 1700px;">
+                    </div>
+                <form onsubmit="return validateForm()" name="formulario_delivery"> <!--name es como el id o class, pero mas parecido al id-->
+                    <label for="nombre">Nombre</label><br>  <!--Label es para q arriba del cuadro donde escribo el nombre diga "Nombre" (idem para direccion de Entrega, Pizza, Email)--->
+                    <input type="text" id="nombre" name="nombre"><br> <!--imput es porq adentro del cuadrado escribiré un texto-->
+                    <label for="direccion">Dirección de entrega</label><br> <!--los br son "enter", sino quedaría todo en el mismo renglón-->
+                    <input type="text" id="direccion" name="direccion"><br>
+                    <label for="direccion">Pizza</label><br>
+                    <select name="pizza" id="pizza">
+                        <option value="mozzarella">Mozzarella</option>   <!--acá no ponemos input texto porq es pa q elijan una opción-->
+                        <option value="margherita">Margherita</option>
+                        <option value="fugazzeta">Fugazzeta</option>
+                        <option value="morron">Con Morrónn</option>
+                        <option value="calabresa">Calabresa</option>
+                        <option value="veggie">Veggie</option>
+                    </select><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email"><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+                    
+
+            </section>
+
+
+
+        </div>
+    <script src="js/header.js"></script> <!--acá estamos el script de java script-->
+    <script src="js/delivery.js"></script>
+    </body>
+</html>

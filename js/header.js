@@ -1,6 +1,6 @@
 function add_main_header(id) {
     document.getElementById(id).innerHTML = 
-                `<img src="img/logo1.png">
+                `<img src="img/logo1.jpg">
                 <nav>
                     <a href="nosotros.html">Nosotros</a>
                     <a href="productos.html">Productos</a>
