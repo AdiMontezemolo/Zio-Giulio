@@ -6,6 +6,7 @@ function add_main_header(id) {
                     <a href="productos.html">Productos</a>
                     <a href="locales.html">Locales</a>
                     <a href="contacto.html">Contacto</a>
+                    <a href="delivery.html">Delivery</a>
                 </nav>`;
   }
   add_main_header("main_header"); //acá ejecuto la función y le envío como argumento (main header) o sea qcuando la funcion se ejecute, el "id" del primer renglon valdrá main_header
