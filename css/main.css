@@ -22,9 +22,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: black;
-    color: floralwhite;       /*Si quisiera cambiar solo el texto del header escribiria en el header, pero yo quiero q todo el documento tenga letras blancas. No aplicó a los botones porq por defecto los botones son azules*/
-    font-family: 'Skranji', cursive; /*Pa q todas las letras del body se vean iguales*/
-    color: burlywood;
+    font-family: 'Skranji', cursive; /*Pa q todas las letras del body se vean iguales*/ /*No bajo la fuente en mi pc porq queremos un hipervinculo q este disponible en todo el mundo*/
+    color: burlywood; /*Si quisiera cambiar solo el texto del header escribiria en el header (de hecho lo hice), yo quiero q todo el documento tenga letras beiges. No aplicó a los botones porq por defecto los botones son azules*/
     text-align: justify;
     padding-left: 33px;
     padding-right: 33px;
