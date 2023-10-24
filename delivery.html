@@ -21,21 +21,21 @@
                         <img src="img/vespaantica.jpg" style="width: 100%; max-width: 1700px;">
                     </div>
                 <form onsubmit="return validateForm()" name="formulario_delivery"> <!--name es como el id o class, pero mas parecido al id-->
-                    <label for="nombre">Nombre</label><br>  <!--Label es para q arriba del cuadro donde escribo el nombre diga "Nombre" (idem para direccion de Entrega, Pizza, Email)--->
-                    <input type="text" id="nombre" name="nombre"><br> <!--imput es porq adentro del cuadrado escribiré un texto-->
-                    <label for="direccion">Dirección de entrega</label><br> <!--los br son "enter", sino quedaría todo en el mismo renglón-->
-                    <input type="text" id="direccion" name="direccion"><br>
-                    <label for="direccion">Pizza</label><br>
+                    <label for="nombre">Nombre</label>  <!--Label es para q arriba del cuadro donde escribo el nombre diga "Nombre" (idem para direccion de Entrega, Pizza, Email)--->
+                    <input type="text" id="nombre" name="nombre"> <!--imput es porq adentro del cuadrado escribiré un texto-->
+                    <label for="direccion">Dirección de entrega</label> <!--los br son "enter", sino quedaría todo en el mismo renglón pero no los ponemos porq son del pasado...-->
+                    <input type="text" id="direccion" name="direccion"> <!--pa no usar br usaremos flex fila 23. Nombre direccion texto es la caja naranja y la violeta es un div que puede ser form en este caso. pERO LO AHORA LO BORRO DE LA FILA 23 Y PASO EL STYLE A MAIN JS-->
+                    <label for="direccion">Pizza</label>
                     <select name="pizza" id="pizza">
                         <option value="mozzarella">Mozzarella</option>   <!--acá no ponemos input texto porq es pa q elijan una opción-->
                         <option value="margherita">Margherita</option>
                         <option value="fugazzeta">Fugazzeta</option>
-                        <option value="morron">Con Morrónn</option>
+                        <option value="morron">Con Morrón</option>
                         <option value="calabresa">Calabresa</option>
                         <option value="veggie">Veggie</option>
-                    </select><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email"><br>
+                    </select>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
 
                     <input type="submit" value="Submit">
                 </form>

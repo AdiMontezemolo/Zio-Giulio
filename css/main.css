@@ -1,19 +1,9 @@
-p {
-    font-family: 'Skranji', cursive;
-    color: burlywood;
-    text-align: justify;
-}
-
 h1 {
-    font-family: 'Skranji', cursive;
-    font-size: 300%;
-    color: burlywood;
+    font-size: 300%;  /*Borramos tipo de letra y color porque lo especificamos en el body*/
 }
 
 h2 {
-    font-family: 'Skranji', cursive;
     font-size: 200%;
-    color: burlywood;
 }
 
 li {
@@ -33,4 +23,39 @@ body {
     flex-direction: column;
     background-color: black;
     color: floralwhite;       /*Si quisiera cambiar solo el texto del header escribiria en el header, pero yo quiero q todo el documento tenga letras blancas. No aplicó a los botones porq por defecto los botones son azules*/
+    font-family: 'Skranji', cursive; /*Pa q todas las letras del body se vean iguales*/
+    color: burlywood;
+    text-align: justify;
+}
+
+/*Ahora separamos los items del formulario y lo hacemos en main porque queremos que todos formularios se vean igual*/
+form {     /*Targeteo el elemento form y todo lo que puse en el style lo copio acá abajo porque quiero q todos se vean iguales SOLO LO QUE ESTA ADENTRO DE STYLE -NO STYLE-*/
+    display: flex; 
+    flex-direction: column;
+    gap: 16px;                      /*gap para separar los elementos del form*/
+}
+
+input:not([type="submit"]), select { /*Imput es el que usamos para insertar texto, también ponemos "select" porque para las pizzas pusimos que se elijan las opciones y qeremos que este fondo transparente se aplique a todo*/
+                                     /*Ponemos "no Submit" para que este estilo no se aplique al submit, pues ese quiero q se vea diferente*/
+    background-color: inherit;   
+    color: inherit;   /*Le agregamos color -que es solo pal color de letra- porque se veia negra. ENtonces ponemos q herede el color de su padre*/
+    font-family: inherit;  /*Y esto es para heredar el tipo de letra*/
+    border: 2px solid burlywood;       /*Esto quiere decir que la linea de abajo "subrayada" de la respuesta sea 2px de grosor y color burlywood*/
+    border-style: none none solid none;  /*Esto es para que el borde sea solo la línea inferior, no un cuadrado*/
+                                        /*No puedo poner primero la linea 44 y luego la 43 porque me aparecen los 4 bordes. POr qué? porque el que manda es el último 
+                                        y border 2px lo que me dice es que los 4 bordes sean 2px */
+}
+
+
+
+
+input[type="submit"] {
+    font-family: inherit;
+    font-size: 150%;
+    background-color: burlywood;
+    width: 100px;   /*No pongo porcentaje porqe no me importa que el boton cambie de tamaño; y si pongo 10% por ej el fondo del boton me queda más chico que la palabra "submit"*/
+}
+
+input[type="submit"]:hover {     /*hover es "poner encima" y esto es pa q cuando apoye el mouse se ilumine*/
+    background-color: rgb(238, 161, 45);   /*Esto es para que "se ilumine" o sea le cambio el color al apoyar el mouse -hover*/
 }
