@@ -1,6 +1,3 @@
-#main_header img {                                            /* selecciona todos los img que esten dentro de main_header*/
-    width: 222px;                                            /*esto es para elegir el tamaño de aquello que seleccione arriba*/
-}
 
 #main_header {                                                           /*selecciona a main_header*/ 
     display: flex;                               /*hace q el container o sea main_header en este caso sa una caja para cajitas pa elegir como se ordenan adentro las cajitas*/
