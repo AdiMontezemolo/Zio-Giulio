@@ -18,20 +18,24 @@
         <div id="main_wrapper">
             <header id="main_header"></header>
 
+
             <section>
-                    <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 70px;">
+                    <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 70px;"> <!--justify content es pa q sea transversal-->
                         <img src="img/vespaantica.jpg" style="width: 100%; max-width: 1700px;">
                     </div>
 
                     <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center;">
-                        <div style="width: 70%;"></div>
+                        <div>
                             <h1>Hacé tu pedido online!</h1>
                             <p style="text-indent: 2em;">Calidad, rapidez y comodidad se unen en nuestra plataforma de pedidos, para que tu próxima pizza sea inolvidable</p>
                             <p style="text-indent: 2em;">Ahorra tiempo y disfruta de la mejor pizza en casa con nuestro proceso de pedido rápido y fácil.</p> <!--text indent es sangría-->
                         </div>
-                        <div style="width: 15%; min-width: 100px; max-height: 200px; float: right; margin-left: 5%;">
-                            <img src="img/motitovespa.png" alt="moto" style="object-fit: contain; max-width: 100%; max-height: 100%;  border-radius: 50%; object-fit: cover;"> <!-- ponemos width 100% (o sea 100% de su padre q es el div) porque por defecto la imagen usa los píxele de la foto original, o sea ocupa la imagen el 100% del div q es su padre y ese div ocupa 30% del flex. Y los div ocupan el 100% de su padre q es flex, y el flex el 100% de su padre q es el section--->
+                        <div style="display: flex; flex-direction: row; justify-content: center; width: 100%;"> <!--hay que poner width 100% porque queremos que la caja violeta donde esté la foto-caja naranja- sea todo el largo de la pantalla y así centrar la motito-->
+                            <div style="width: 35%;">
+                                <img src="img/motitovespa.png" alt="moto" style="object-fit: contain; max-width: 100%; max-height: 100%;  border-radius: 50%; object-fit: cover;"> <!-- ponemos width 100% (o sea 100% de su padre q es el div) porque por defecto la imagen usa los píxele de la foto original, o sea ocupa la imagen el 100% del div q es su padre y ese div ocupa 30% del flex. Y los div ocupan el 100% de su padre q es flex, y el flex el 100% de su padre q es el section--->
+                            </div>
                         </div>
+                    </div>
 
                 <form onsubmit="return validateForm()" name="formulario_delivery"> <!--name es como el id o class, pero mas parecido al id-->
                     <label for="nombre">Nombre</label>  <!--Label es para q arriba del cuadro donde escribo el nombre diga "Nombre" (idem para direccion de Entrega, Pizza, Email)--->
