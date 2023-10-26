@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 70px;
-    flex-wrap: wrap;     /*es para q no queden todos los productos en el mismo renglón*/
+    flex-wrap: wrap;      /*es para q no queden todos los productos en el mismo renglón*/
 }
 
 .titulo_de_producto {
@@ -15,10 +15,12 @@
     border-radius: 50%;
     object-fit: cover;
     width: 100%; /*a diferencia de los demás eleementos la imagen no viene con 100% por default, entonces le especifico 100% del padre q en este caso el div producto*/
+    height: 200px;
 }
 
 .producto {
     width: 27%; /*Yo quiero q hayan 3 produucttos por renglon pero hay q considerar el gap, por eso no uso 33%*/
     max-width: 700px;
     min-width: 320px;
+    align-content: space-between;
 }
