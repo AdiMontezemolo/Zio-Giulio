@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zio Giulio Contacto</title>
+        <link rel="stylesheet" href="css/header.css">       
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contacto.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <header id="main_header"></header>
+        
+            <h1>Si queres divertirte y festejar con nosotros, <br>
+                completá el formulario y hacé tu reserva!!!</h1>
+       
+        <form onsubmit="return validateForm()" name="formulario_reservas"> 
+            
+            <h2>RESERVAS</h2>
+            
+            <label for="nombre">Nombre</label><br>  
+            <input type="text" id="nombre" name="nombre" size="30"><br> 
+           
+            <label for="telefono">Telefono de contacto</label><br> 
+            <input type="tel" id="telefono" name="telefono" maxlength="10" size="30"><br>
+           
+            <label for="email">Email</label><br>  
+            <input type="email" id="email" name="email" size="30"><br>
+            
+            <label for="invitados">Cantidad de personas</label><br> 
+            <input type="number" id="cantidad de invitados" name="invitados" size="30"><br> 
+           
+            <label for="sucursal">Sucursal</label><br>
+            <select name="sucursal" id="sucursal"><br>
+                <option value="sucursal">Belgrano</option>
+                <option value="sucursal">Vicente Lopez</option>
+            </select><br>
+           
+            <label for="fecha de reserva">Fecha de reserva</label><br>
+            <input type="date" id="reserva" name="reserva" size="30"><br>
+            <br>
+            <input type="submit" value="ENVIAR">
+
+            </form>
+            </div>
+    <script src="js/header.js"></script>
+    <script src="js/contacto.js"></script>
+    
+</body>
+</html>
