@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/header.css">       <!--al header lo llame main_header pa poder seleccionarlo a ese por si dsps agrego otro header-->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/productos.css"> <!--acá le estamos diciendo q use el archivo css-->
+        <link rel="stylesheet" href="css/footer.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">  <!--es el link de a fuente de google fonts. los 3 renglones-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,16 +75,27 @@
                         </div>
 
                     </div>
-
                 </div>
 
-
+                <div style="display: flex; flex-direction: row; justify-content: center;"> <!--este div lo agrego para hacer una caja violeta y tener una única caja naranja ("cotizaciones") que puedo centrar-->
+                    <div id="Cotizaciones" style="margin-top: 100px; color: whitesmoke; ">
+                        <span>Cotización divisas al día de la fecha</span>
+                        <div style="display: flex; flex-direction: row; gap: 15px; flex-wrap: wrap;"> <!--eso de flex rap es para q si la pantalla es mas chiquita manda las divisas para abajo, para q sea responsive. Flex direction es si lo voy a ver en fila o columna-->
+                            <span id="precio_USD"></span>   <!--pongo span en vez de p de párrafo porque así me quedan en un mismo renglón. El p me las mandaba una a cada renglon-->
+                            <span id="precio_EUR"></span>
+                            <span id="precio_BRL"></span>
+                        </div>
+                    </div>
+                </div>
 
             </section>
 
+            <footer id="main_footer"></footer> <!--tiene q estar debajo del sectior pero adentro del div main wraper-->
+            
 
-
-        </div>
-    <script src="js/header.js"></script> <!--acá estamos el script de java script-->
+        </div> <!--cierro el main wrapper-->
+    <script src="js/header.js"></script> <!--acá estamos el script de javascript-->
+    <script src="js/footer.js"></script>
+    <script src="js/divisas.js"></script> <!--acá cito el javascript divisas-->
     </body>
 </html>

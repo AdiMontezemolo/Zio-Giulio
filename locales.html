@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/header.css">       <!--al header lo llame main_header pa poder seleccionarlo a ese por si dsps agrego otro header-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/productos.css"> <!--acá le estamos diciendo q use el archivo css-->
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!--es el link de a fuente de google fonts. los 3 renglones-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
 <body>
     <div id="main_wrapper">
         <header id="main_header"></header>
+        
         <section>
             <div style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 70px;"> <!--lo centramos a la imagen. Margin bottom es pa dejar espacio abajo-->
                 <img src="img/Local.jpg" style="width: 100%; max-width: 840px;"> <!---acá metimos la imagen el img, luego ajustamos el tamaño con style inline porque solo está acá en prooductos esta foto -no como el header que está en todas-->
@@ -26,7 +28,14 @@
             <h2>Barrio de Vicente Lopez</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3287.1930136418828!2d-58.47664235837058!3d-34.523337562464825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDMxJzI0LjAiUyA1OMKwMjgnMzAuNCJX!5e0!3m2!1ses-419!2sca!4v1697461345715!5m2!1ses-419!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-    <script src="js/header.js"></script> <!--acá estamos el script de java script-->
+
         </section>
+
+        <footer id="main_footer"></footer> <!--tiene q estar debajo del sectior pero adentro del div main wraper-->
+    </div>
+
+        <script src="js/header.js"></script> <!--acá estamos el script de java script-->
+        <script src="js/footer.js"></script>
+        <script src="js/divisas.js"></script>
 </body>
 </html>
