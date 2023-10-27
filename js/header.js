@@ -4,9 +4,8 @@ function add_main_header(id) {
                     <img src="img/logo2.jpg" style="object-fit: contain; width: 100%;"> 
                 </div>    
                 <nav style="align-self: center;">
-                    <a href="index.html">Home</a>
                     <a href="nosotros.html">Nosotros</a>
-                    <a href="productos.html">Productos</a>
+                    <a href="productos.html">Menú</a>
                     <a href="locales.html">Locales</a>
                     <a href="contacto.html">Contacto</a>
                     <a href="delivery.html">Delivery</a>
