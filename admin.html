@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zio Giulio ADMIN</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="css/header.css">       <!--al header lo llame main_header pa poder seleccionarlo a ese por si dsps agrego otro header-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/productos.css"> <!--acá le estamos diciendo q use el archivo css-->
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/admin.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">  <!--es el link de a fuente de google fonts. los 3 renglones-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="icon" type="image/x-icon" href="img/icon.png">
+    
+    </head>
+    <body>
+        <div id="main_wrapper">
+            <header id="main_header"></header>
+			
+			<h1>Administración del sitio</h1>
+			
+			 <section>
+				<h2>Productos en la base de datos</h2>
+                <div id="app">
+					<div v-if="error">
+						<p>❌ Error: No se pueden cargar los productos</p>
+					</div>
+					<div v-else>
+						<div v-if="cargando">
+							<p>Cargando productos...</p>
+						</div>
+						<div v-else-if="!productos.length">
+							No hay productos en la base de datos 😕
+						</div>
+						<div v-else> <!-- Acá estamos si sí se pudieron cargar los productos y está todo bien -->
+							<a class="btn btn-primary" href="alta_de_productos.html" style="margin-top: 22px; margin-bottom: 22px;">Añadir nuevo producto</a>
+							<table id="tabla_de_productos">
+								<thead>
+									<tr>
+										<th scope="col">id</th>
+										<th scope="col">Nombre</th>
+										<th scope="col">Descripción</th>
+										<th scope="col">Foto</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="producto in productos">
+										<td scope="row">{{producto.id}}</td>
+										<td>{{producto.nombre}}</td>
+										<td>{{producto.descripcion}}</td>
+										<td><img :src="producto.imagen" :alt="producto.nombre"></td>
+										<td>
+											<div style="display: flex; flex-direction: column; gap: 22px;">
+												<a class="btn btn-primary" :href="'./editar_producto.html?id='+ producto.id" >Editar</a>
+												<button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><a class="btn btn-primary" href="alta_de_productos.html">Añadir nuevo producto</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                    </div>
+                </div> <!-- id="app" -->
+
+			
+        </div> <!-- id="main_wrapper" -->
+        
+		<script src="js/header.js"></script>
+		<script src="js/contacto.js"></script>
+		<!-- Bootstrap JavaScript Libraries -->
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"	integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+		<script src="js/productos.js"></script>
+	</body>
+</html>
