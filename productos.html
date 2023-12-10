@@ -25,7 +25,7 @@
                 </div>    <!---tenemos que crear un div porque queremos usar flex y flex son cajitas sí o sí-->
                             <!--como solo lo hacemos acá, lo hacemos con CSS inline en el div o sea e primer renglon-->
                 
-                <div id="app" class="gondola"> <!--no usamos id porq tal vez hayan varias gondolas y no sea UNICO-->
+                <div id="app"> <!--no usamos id porq tal vez hayan varias gondolas y no sea UNICO-->
 					<div v-if="error">
 						<p>❌ Error: No se pueden cargar los productos</p>
 					</div>
@@ -37,13 +37,15 @@
 							No hay productos en la base de datos 😕
 						</div>
 						<div v-else>
-							<div class="producto" v-for="producto in productos">
-								<img :src="producto.imagen" :alt="producto.nombre">
-								<div>
-									<p class="titulo_de_producto">{{producto.nombre}}</p>
-									<p class="descripcion_de_producto">{{producto.descripcion}}</p>
-								</div>
-							</div>
+                            <div class="gondola">
+                                <div class="producto" v-for="producto in productos">
+                                    <img :src="producto.imagen" :alt="producto.nombre">
+                                    <div>
+                                        <p class="titulo_de_producto">{{producto.nombre}}</p>
+                                        <p class="descripcion_de_producto">{{producto.descripcion}}</p>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
                     </div>
                 </div> <!-- id="app" -->
