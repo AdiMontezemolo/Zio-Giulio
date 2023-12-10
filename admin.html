@@ -38,7 +38,6 @@
 							No hay productos en la base de datos 😕
 						</div>
 						<div v-else> <!-- Acá estamos si sí se pudieron cargar los productos y está todo bien -->
-							<a class="btn btn-primary" href="alta_de_productos.html" style="margin-top: 22px; margin-bottom: 22px;">Añadir nuevo producto</a>
 							<table id="tabla_de_productos">
 								<thead>
 									<tr>
@@ -46,7 +45,7 @@
 										<th scope="col">Nombre</th>
 										<th scope="col">Descripción</th>
 										<th scope="col">Foto</th>
-										<th scope="col"></th>
+										<th scope="col"><a class="btn btn-primary" href="alta_de_productos.html" style="margin-top: 22px; margin-bottom: 22px;">Añadir nuevo producto</a></th>
 									</tr>
 								</thead>
 								<tbody>
@@ -61,9 +60,6 @@
 												<button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
 											</div>
 										</td>
-									</tr>
-									<tr>
-										<td><a class="btn btn-primary" href="alta_de_productos.html">Añadir nuevo producto</a></td>
 									</tr>
 								</tbody>
 							</table>
