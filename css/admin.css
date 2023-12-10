@@ -16,3 +16,9 @@
 #tabla_de_productos tr {
   border-bottom: 1pt solid #7d6e4a;
 }
+
+#tabla_de_productos thead {
+	position: sticky;
+	top: 0;
+	background-color: rgba(0,0,0,.8);
+}
