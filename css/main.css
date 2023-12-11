@@ -8,7 +8,7 @@ h2 {
 
 li {
     font-family: 'Skranji', cursive;
-    color: #AB000B;
+    color: burlywood;
 }
 
 #main_wrapper {
@@ -21,9 +21,9 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(193, 241, 169);
+    background-color: black;
     font-family: 'Skranji', cursive; /*Pa q todas las letras del body se vean iguales*/ /*No bajo la fuente en mi pc porq queremos un hipervinculo q este disponible en todo el mundo*/
-    color: #AB000B; /*Si quisiera cambiar solo el texto del header escribiria en el header (de hecho lo hice), yo quiero q todo el documento tenga letras beiges. No aplicó a los botones porq por defecto los botones son azules*/
+    color: burlywood; /*Si quisiera cambiar solo el texto del header escribiria en el header (de hecho lo hice), yo quiero q todo el documento tenga letras beiges. No aplicó a los botones porq por defecto los botones son azules*/
     text-align: justify;
     padding-left: 33px;
     padding-right: 33px;
@@ -41,7 +41,7 @@ input:not([type="submit"]), select { /*Imput es el que usamos para insertar text
     background-color: inherit;   
     color: inherit;   /*Le agregamos color -que es solo pal color de letra- porque se veia negra. ENtonces ponemos q herede el color de su padre*/
     font-family: inherit;  /*Y esto es para heredar el tipo de letra*/
-    border: 2px solid #AB000B;       /*Esto quiere decir que la linea de abajo "subrayada" de la respuesta sea 2px de grosor y color burlywood*/
+    border: 2px solid burlywood;       /*Esto quiere decir que la linea de abajo "subrayada" de la respuesta sea 2px de grosor y color burlywood*/
     border-style: none none solid none;  /*Esto es para que el borde sea solo la línea inferior, no un cuadrado*/
                                         /*No puedo poner primero la linea 44 y luego la 43 porque me aparecen los 4 bordes. POr qué? porque el que manda es el último 
                                         y border 2px lo que me dice es que los 4 bordes sean 2px */
@@ -53,12 +53,12 @@ input:not([type="submit"]), select { /*Imput es el que usamos para insertar text
 input[type="submit"] {
     font-family: inherit;
     font-size: 150%;
-    background-color: #AB000B;
+    background-color: burlywood;
     width: 100px;   /*No pongo porcentaje porqe no me importa que el boton cambie de tamaño; y si pongo 10% por ej el fondo del boton me queda más chico que la palabra "submit"*/
 }
 
 input[type="submit"]:hover {     /*hover es "poner encima" y esto es pa q cuando apoye el mouse se ilumine*/
-    background-color: #AB000B;   /*Esto es para que "se ilumine" o sea le cambio el color al apoyar el mouse -hover*/
+    background-color: burlywood;   /*Esto es para que "se ilumine" o sea le cambio el color al apoyar el mouse -hover*/
 }
 
 @media screen and (max-width: 999px) {   /*qué pasa cuando la pantalla es angosta? Es como un nuevo archivo css que se va aplicar cuando se da esa condicion del ancho de la pantalla*/
