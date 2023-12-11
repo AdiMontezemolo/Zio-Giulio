@@ -58,7 +58,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {     /*hover es "poner encima" y esto es pa q cuando apoye el mouse se ilumine*/
-    background-color: rgb(238, 161, 45);   /*Esto es para que "se ilumine" o sea le cambio el color al apoyar el mouse -hover*/
+    background-color: burlywood;   /*Esto es para que "se ilumine" o sea le cambio el color al apoyar el mouse -hover*/
 }
 
 @media screen and (max-width: 999px) {   /*qué pasa cuando la pantalla es angosta? Es como un nuevo archivo css que se va aplicar cuando se da esa condicion del ancho de la pantalla*/
