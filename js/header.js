@@ -1,7 +1,7 @@
 function add_main_header(id) {
     document.getElementById(id).innerHTML = 
                 `<div style="width: 222px; max-width: 25%;"> 
-                    <img src="img/logo2.jpg" style="object-fit: contain; width: 100%;"> 
+                    <img src="img/logo2.png" style="object-fit: contain; width: 77%;"> 
                 </div>    
                 <nav style="align-self: center;">
                     <a href="nosotros.html">Nosotros</a>

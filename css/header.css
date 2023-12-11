@@ -2,6 +2,7 @@
 #main_header {                                                           /*selecciona a main_header*/ 
     display: flex;                               /*hace q el container o sea main_header en este caso sa una caja para cajitas pa elegir como se ordenan adentro las cajitas*/
     flex-direction: row;                      /*puede ser row o column que es cómo se ordenan dichas cajitas. Flex es responsive*/
+    margin-bottom: 33px;
 }                                          /*Pero la linea era solo para q la gran caja main_header sea flex. Queremos q quien conitene a los botones tambien sea flex o sea q nav sea flex*/
 
 #main_header nav {                          /*No ponmos el #porq #es solo cuando tiene un id. Pero aca si lo ponemos porq agarramos todos los nav adentro deel main_header*/

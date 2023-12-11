@@ -21,7 +21,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: #1a1a1a;
     font-family: 'Skranji', cursive; /*Pa q todas las letras del body se vean iguales*/ /*No bajo la fuente en mi pc porq queremos un hipervinculo q este disponible en todo el mundo*/
     color: burlywood; /*Si quisiera cambiar solo el texto del header escribiria en el header (de hecho lo hice), yo quiero q todo el documento tenga letras beiges. No aplicó a los botones porq por defecto los botones son azules*/
     text-align: justify;
