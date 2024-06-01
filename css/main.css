@@ -27,6 +27,7 @@ body {
     text-align: justify;
     padding-left: 33px;
     padding-right: 33px;
+    margin-bottom: 88px;
 }
 
 /*Ahora separamos los items del formulario y lo hacemos en main porque queremos que todos formularios se vean igual*/
